@@ -43,7 +43,7 @@
 
 # What is your status page called?
 # Shows up in the browser bar and meta tags
-title: Eggsample Status
+title: Shashank's sites status
 
 # Should posts, which have a publish date
 # from the future, be built? Useful for
@@ -51,7 +51,7 @@ title: Eggsample Status
 #
 # We recommend to keep this at `true`.
 # BOOLEAN; `true`, `false`
-buildFuture: true
+buildFuture: false
 
 # What language do you want to use for the
 # html[lang] definition?
@@ -90,7 +90,7 @@ defaultContentLanguage: en
 # localhost should automatically work.
 #
 # Example: https://status.example.com/
-baseURL: https://cstate.mnts.lt
+baseURL: https://laughing-cray-6f8f55.netlify.app
 
 ############################################################
 # +------------------------------------------------------+ #
@@ -121,10 +121,9 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   categories:
-    - name: North Coast
-      description: The main servers are located here.
-      closed: true
-    - name: East Coast      
+    - name: Sites
+      description: Static sites go here
+    - name: Apps      
     - name: Uncategorized
       untitled: true
 
@@ -134,17 +133,14 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   systems:
-    - name: Gateway
-      category: North Coast
-    - name: Backup Gateway
-      category: East Coast
-    - name: API
-      description: The guts of the application.
-      category: Uncategorized
-    - name: Media Proxy
-      description: This is the service responsible for serving images, audio, and video. It is reliant on our CDN.
-      category: Uncategorized
-
+    - name: shashankmankotia.com
+      category: Sites
+    - name: mankotia.in
+      category: Sites
+    - name: Jellyfin
+      description: ....you know.....
+      category: Apps
+    
   # What date format to use?
   #
   # Hugo formatting docs:
@@ -192,7 +188,7 @@ params:
   #
   # Default: false
   # BOOLEAN; `true`, `false`
-  useLogo: true
+  useLogo: false
 
   # Where is the logo located, if one is
   # present at all?
@@ -264,7 +260,7 @@ params:
   #
   # Default: `true`
   # BOOLEAN; `true`, `false`
-  alwaysKeepBrandColor: true
+  alwaysKeepBrandColor: false
   
   # Introduced in v4.0.1 for consistent
   # site title text color.
